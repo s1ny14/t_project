@@ -37,3 +37,18 @@ days_to_next = (next_birthday - today).days # сколько дней до сл�
 
 print("Прошло с рождения: ", days_passed)
 print("До следующего дня рождения: ", days_to_next)
+
+#10
+def format_datetime(dt: datetime) -> str:
+    months = [
+        '', 'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+        'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+    ]
+    day = dt.day
+    month = months[dt.month]
+    year = dt.year
+    hour = dt.hour
+    minute = dt.minute
+    return f'Сегодня {day} {month} {year} года, время: {hour:02d}:{minute:02d}'
+current_time = datetime.now()
+print(format_datetime(current_time))
