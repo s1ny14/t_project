@@ -27,3 +27,14 @@ class Countdown:
         return self.n
 for x in Countdown(5):
     print(x)
+
+#5
+def fib(n):
+    fibon = [0, 1]
+    for i in range(2, n)
+        fibon.append(fibon[i-1] + fibon[i-2])
+    return fibon
+
+for num in fib(5):
+    print(num)
+    
