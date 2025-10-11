@@ -17,7 +17,7 @@ class Countdown:
     def __init__(self, n): # инициализация атрибутов
         self.n = n + 1
 
-    def __iter__(self): # сам итератор
+    def __iter__(self): # сам итератор, вызывает сам себя
         return self
 
     def __next__(self): # что происходит в каждой итерации
@@ -38,5 +38,8 @@ def fib(n):
 
 for num in fib(5):
     print(num)
+
+print("Здравствуйте")
+
 
 
