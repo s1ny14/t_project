@@ -13,5 +13,5 @@ S = P * (Decimal('1') + monthly_rate) ** mount # итоговая сумма
 
 profit = S - P # прибыль
 
-print(S.quantize(Decimal('0.01')))
-print(profit.quantize(Decimal('0.01')))
+print("Итоговая сумма: ", S.quantize(Decimal('0.01')))
+print("Прибыль: ", profit.quantize(Decimal('0.01')))
