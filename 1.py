@@ -1,1 +1,2 @@
-print("Cписок квадратов чисел от 1 до 10:", *[x**2 for x in range(1, 10)])
+squares = [x ** 2 for x in range(10)]
+print(squares)
